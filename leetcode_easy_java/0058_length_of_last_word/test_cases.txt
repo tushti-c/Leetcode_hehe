@@ -1,0 +1,11 @@
+Example 1
+--------------------
+"Hello World"
+
+Example 2
+--------------------
+"   fly me   to   the moon  "
+
+Example 3
+--------------------
+"luffy is still joyboy"
