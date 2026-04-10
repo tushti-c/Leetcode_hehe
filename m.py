@@ -24,7 +24,7 @@ SESSION.headers.update({
 # -----------------------------
 # Config
 # -----------------------------
-LANG_SLUG = "python3"
+LANG_SLUG = "java"
 LIMIT = 20          # how many easy questions to download
 SKIP_PAID = True    # skip premium-only questions
 SLEEP_SECS = 0.5    # be polite
@@ -221,7 +221,7 @@ def get_code_stub(question: dict, lang_slug: str) -> str:
     for snippet in question.get("codeSnippets", []):
         if snippet["langSlug"] == lang_slug:
             return snippet["code"]
-    return "# No code snippet found for selected language.\n"
+    return "// No code snippet found for selected language.\n"
 
 
 def build_test_file(question: dict) -> str:
@@ -245,7 +245,7 @@ def write_question_files(question: dict):
     problem_dir.mkdir(parents=True, exist_ok=True)
 
     readme_path = problem_dir / "README.md"
-    solution_path = problem_dir / "solution.py"
+    solution_path = problem_dir / "solution.java"
     tests_path = problem_dir / "test_cases.txt"
 
     readme_path.write_text(build_readme(question), encoding="utf-8")

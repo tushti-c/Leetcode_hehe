@@ -1,0 +1,9 @@
+Example 1
+--------------------
+"sadbutsad"
+"sad"
+
+Example 2
+--------------------
+"leetcode"
+"leeto"
